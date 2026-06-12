@@ -35,8 +35,9 @@ createRoot(document.getElementById("root")).render(
               </ProtectedRoute>
             }
           />
+          {/* Complementamos a rota de blog-post para procurar por postagem específica dentro do nosso array de posts. */}
           <Route
-            path="blog-post"
+            path="blog-post/:slug"
             element={
               <ProtectedRoute>
                 <BlogPost />
