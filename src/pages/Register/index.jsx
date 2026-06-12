@@ -21,6 +21,7 @@ export const Register = () => {
   // Chamando o hook de autenticação (creio que seja um mock hook)
   const { register } = useAuth();
   const navigate = useNavigate();
+
   const onSubmit = (formData) => {
     // Pegando dados do formulário para criar o usuário
     const name = formData.get("name");
